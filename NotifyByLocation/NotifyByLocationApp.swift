@@ -2,7 +2,7 @@
 //  NotifyByLocationApp.swift
 //  NotifyByLocation
 //
-//  Created by 花形春輝 on 2023/01/16.
+//  Created by 春蔵 on 2023/01/16.
 //
 
 import SwiftUI

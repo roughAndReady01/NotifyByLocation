@@ -11,6 +11,9 @@
 		400176E82974DB240030D4D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400176E72974DB240030D4D6 /* ContentView.swift */; };
 		400176EA2974DB270030D4D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 400176E92974DB270030D4D6 /* Assets.xcassets */; };
 		400176ED2974DB270030D4D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 400176EC2974DB270030D4D6 /* Preview Assets.xcassets */; };
+		400176F42974DB8F0030D4D6 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400176F32974DB8F0030D4D6 /* ContentViewModel.swift */; };
+		400176F62974DE880030D4D6 /* LocationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400176F52974DE880030D4D6 /* LocationEngine.swift */; };
+		400176F929752AC90030D4D6 /* NotifySound.caf in Resources */ = {isa = PBXBuildFile; fileRef = 400176F829752AC90030D4D6 /* NotifySound.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,12 @@
 		400176E72974DB240030D4D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		400176E92974DB270030D4D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		400176EC2974DB270030D4D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		400176F32974DB8F0030D4D6 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		400176F52974DE880030D4D6 /* LocationEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationEngine.swift; sourceTree = "<group>"; };
+		400176F72974E9DC0030D4D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		400176F829752AC90030D4D6 /* NotifySound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NotifySound.caf; sourceTree = "<group>"; };
+		400176FA2975316A0030D4D6 /* Nakanosakaue.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Nakanosakaue.gpx; sourceTree = "<group>"; };
+		400176FB297532020030D4D6 /* NisiSinjyuku.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = NisiSinjyuku.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +44,8 @@
 		400176D92974DB240030D4D6 = {
 			isa = PBXGroup;
 			children = (
+				400176FB297532020030D4D6 /* NisiSinjyuku.gpx */,
+				400176FA2975316A0030D4D6 /* Nakanosakaue.gpx */,
 				400176E42974DB240030D4D6 /* NotifyByLocation */,
 				400176E32974DB240030D4D6 /* Products */,
 			);
@@ -51,10 +62,14 @@
 		400176E42974DB240030D4D6 /* NotifyByLocation */ = {
 			isa = PBXGroup;
 			children = (
-				400176E52974DB240030D4D6 /* NotifyByLocationApp.swift */,
-				400176E72974DB240030D4D6 /* ContentView.swift */,
+				400176F72974E9DC0030D4D6 /* Info.plist */,
 				400176E92974DB270030D4D6 /* Assets.xcassets */,
+				400176E72974DB240030D4D6 /* ContentView.swift */,
+				400176F32974DB8F0030D4D6 /* ContentViewModel.swift */,
+				400176E52974DB240030D4D6 /* NotifyByLocationApp.swift */,
+				400176F829752AC90030D4D6 /* NotifySound.caf */,
 				400176EB2974DB270030D4D6 /* Preview Content */,
+				400176F52974DE880030D4D6 /* LocationEngine.swift */,
 			);
 			path = NotifyByLocation;
 			sourceTree = "<group>";
@@ -125,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				400176F929752AC90030D4D6 /* NotifySound.caf in Resources */,
 				400176ED2974DB270030D4D6 /* Preview Assets.xcassets in Resources */,
 				400176EA2974DB270030D4D6 /* Assets.xcassets in Resources */,
 			);
@@ -139,6 +155,8 @@
 			files = (
 				400176E82974DB240030D4D6 /* ContentView.swift in Sources */,
 				400176E62974DB240030D4D6 /* NotifyByLocationApp.swift in Sources */,
+				400176F42974DB8F0030D4D6 /* ContentViewModel.swift in Sources */,
+				400176F62974DE880030D4D6 /* LocationEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +213,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +267,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -270,11 +288,16 @@
 				DEVELOPMENT_TEAM = FLYP893UYL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotifyByLocation/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "このアプリでは目的地への接近を確認するため位置情報を取得します";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "このアプリでは目的地への接近を確認するため位置情報を取得します";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "このアプリでは目的地への接近を確認するため位置情報を取得します";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +322,16 @@
 				DEVELOPMENT_TEAM = FLYP893UYL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotifyByLocation/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "このアプリでは目的地への接近を確認するため位置情報を取得します";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "このアプリでは目的地への接近を確認するため位置情報を取得します";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "このアプリでは目的地への接近を確認するため位置情報を取得します";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
