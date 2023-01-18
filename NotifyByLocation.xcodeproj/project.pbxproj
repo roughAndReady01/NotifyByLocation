@@ -28,6 +28,8 @@
 		400176F829752AC90030D4D6 /* NotifySound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NotifySound.caf; sourceTree = "<group>"; };
 		400176FA2975316A0030D4D6 /* Nakanosakaue.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Nakanosakaue.gpx; sourceTree = "<group>"; };
 		400176FB297532020030D4D6 /* NisiSinjyuku.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = NisiSinjyuku.gpx; sourceTree = "<group>"; };
+		400176FE297781D00030D4D6 /* Shinjuku.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Shinjuku.gpx; sourceTree = "<group>"; };
+		400176FF2977866A0030D4D6 /* Shinagawa.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Shinagawa.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,8 +46,10 @@
 		400176D92974DB240030D4D6 = {
 			isa = PBXGroup;
 			children = (
+				400176FE297781D00030D4D6 /* Shinjuku.gpx */,
 				400176FB297532020030D4D6 /* NisiSinjyuku.gpx */,
 				400176FA2975316A0030D4D6 /* Nakanosakaue.gpx */,
+				400176FF2977866A0030D4D6 /* Shinagawa.gpx */,
 				400176E42974DB240030D4D6 /* NotifyByLocation */,
 				400176E32974DB240030D4D6 /* Products */,
 			);
